@@ -7,7 +7,6 @@ public class ReverseOrderofFibonacci {
     public static void main(String[] args) {
         int num = 10;
         ArrayList<Integer> a=new ArrayList<>();
-
         int first = 0, second = 1, sumofSeries = 1;
         a.add(0,first);
         a.add(1,second);
