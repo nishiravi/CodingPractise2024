@@ -1,11 +1,8 @@
 package Programs;
 
-import java.util.HashMap;
 import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.PriorityQueue;
 
-public class RemoveDuplicate {
+public class RemoveDuplicateCharcter {
     public static void main(String[] args) {
         String input = "pepe";
         String data = input.toUpperCase();
