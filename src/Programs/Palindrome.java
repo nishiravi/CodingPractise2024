@@ -10,13 +10,15 @@ public class Palindrome {
         int right = data.length() - 1;
         int left = 0;
         boolean isPalindrome=true;
-        for(int i=0;i<data.length();i++)
+        while(left<right)
         {
             if(data.charAt(left)!=data.charAt(right))
             {
                 isPalindrome=false;
                 break;
             }
+            left++;
+            right--;
         }
 
         if(isPalindrome==true)

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CountCharOccurance {
     public static void main(String[] args) {
-        String data = "Nishi";
+        String data = "selenium";
         String input=data.toLowerCase();
         HashMap<Character, Integer> map=new HashMap<>();
         for( Character a: data.toCharArray())

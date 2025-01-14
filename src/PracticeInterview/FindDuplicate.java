@@ -6,7 +6,7 @@ import java.util.Iterator;
 public class FindDuplicate {
     public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4, 4, 8, 7, 8};
+        int[] arr = {1, 2, 3, 1, 4, 5, 6, 3};
         findduplicate(arr);
     }
 
