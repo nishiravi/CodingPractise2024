@@ -3,7 +3,7 @@ package Programs;
 import java.util.Scanner;
 
 public class SingleNumber {
-
+//Leetcode:https://leetcode.com/problems/single-number/
     public static void main(String[] args)
     {
       int[] nums={2,2,1,1,5};
