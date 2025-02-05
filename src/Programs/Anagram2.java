@@ -1,6 +1,7 @@
 package Programs;
 
 public class Anagram2 {
+    //https://leetcode.com/problems/valid-anagram/description/
         public static void main(String[] args) {
             String str1 = "listen";
             String str2 = "silent";
