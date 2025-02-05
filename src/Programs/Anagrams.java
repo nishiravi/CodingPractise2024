@@ -3,6 +3,8 @@ package Programs;
 import java.util.Arrays;
 
 public class Anagrams {
+    //An anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+    // typically using all the original letters exactly once.
     public static void main(String[] args) {
 
         String str1 = "Listen";
