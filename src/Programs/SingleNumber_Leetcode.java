@@ -2,7 +2,7 @@ package Programs;
 
 import java.util.Scanner;
 
-public class SingleNumber {
+public class SingleNumber_Leetcode {
 //Leetcode:https://leetcode.com/problems/single-number/
     public static void main(String[] args)
     {

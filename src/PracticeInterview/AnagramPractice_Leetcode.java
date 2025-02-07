@@ -1,7 +1,6 @@
-package Programs;
+package PracticeInterview;
 
-public class Anagram2 {
-    //https://leetcode.com/problems/valid-anagram/description/
+public class AnagramPractice_Leetcode {
         public static void main(String[] args) {
             String str1 = "listen";
             String str2 = "silent";
