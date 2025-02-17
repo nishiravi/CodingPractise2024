@@ -1,4 +1,4 @@
-package PracticeString;
+package PracticeInterview.PracticeString;
 
 public class StringBuilderExample {
 

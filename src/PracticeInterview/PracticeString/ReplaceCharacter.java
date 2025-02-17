@@ -1,4 +1,4 @@
-package PracticeString;
+package PracticeInterview.PracticeString;
 
 public class ReplaceCharacter {
     public static void main(String[] args) {

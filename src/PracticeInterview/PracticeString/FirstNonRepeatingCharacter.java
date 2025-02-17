@@ -1,7 +1,6 @@
-package PracticeString;
+package PracticeInterview.PracticeString;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 public class FirstNonRepeatingCharacter {
