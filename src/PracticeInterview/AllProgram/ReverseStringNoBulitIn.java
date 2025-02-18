@@ -1,4 +1,4 @@
-package PracticeInterview;
+package PracticeInterview.AllProgram;
 
 public class ReverseStringNoBulitIn {
     public static void main(String[] args) {

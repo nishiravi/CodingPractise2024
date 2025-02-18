@@ -1,6 +1,4 @@
-package PracticeInterview;
-
-import static Programs.BubbleSort.bubbleSort;
+package PracticeInterview.AllProgram;
 
 public class BubbleSort {
     public static void main(String[] args) {

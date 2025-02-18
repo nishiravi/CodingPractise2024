@@ -10,13 +10,12 @@ public class MissingNumber {
 
     private static int  missingnumber(int[] arr, int n) {
 
-        int expectedsum=0;
+        int expectedsum=n*(n+1)/2;
         int actualsum=0;
-        expectedsum=n*(n+1)/2;
         for(int num:arr)
         {
             actualsum+=num;
         }
-        return expectedsum-actualsum;
+        return expectedsum-actualsum; // gives the missing number
     }
 }

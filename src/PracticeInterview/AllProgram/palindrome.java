@@ -1,4 +1,4 @@
-package PracticeInterview;
+package PracticeInterview.AllProgram;
 
 public class palindrome {
     public static void main(String[] args) {

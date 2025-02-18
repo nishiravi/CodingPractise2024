@@ -1,4 +1,4 @@
-package PracticeInterview;
+package PracticeInterview.AllProgram;
 
 public class SingleNumberPractice_Leetcode {
     public static void main(String[] args) {

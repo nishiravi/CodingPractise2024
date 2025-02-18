@@ -1,9 +1,4 @@
-package PracticeInterview;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+package PracticeInterview.AllProgram;
 
 public class MaxMinValues {
     public static void main(String[] args) {

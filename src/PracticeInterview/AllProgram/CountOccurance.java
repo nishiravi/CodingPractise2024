@@ -1,4 +1,4 @@
-package PracticeInterview;
+package PracticeInterview.AllProgram;
 
 import java.util.HashMap;
 import java.util.Map;

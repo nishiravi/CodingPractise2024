@@ -1,4 +1,4 @@
-package PracticeInterview;
+package PracticeInterview.AllProgram;
 
 import java.util.HashSet;
 import java.util.Iterator;
