@@ -20,4 +20,7 @@ public class CountOccurrencesofEachCharacter {
           System.out.println(entry.getKey()+ "-->"+entry.getValue());
       }
     }
+
+
+   
 }
