@@ -1,8 +1,8 @@
 package PracticeInterview.LinkedList;
 
 public class FindNthNodeBruteForce {
-    Node headNode;
-
+    static Node headNode;
+// time complexity=O(n^2), space complexity=O(1)
     public static void main(String[] args) {
         int n = 3;
         FindNthNodeBruteForce list = new FindNthNodeBruteForce();

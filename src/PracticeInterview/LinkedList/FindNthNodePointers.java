@@ -3,7 +3,7 @@ package PracticeInterview.LinkedList;
 public class FindNthNodePointers {
 
     Node headnode;
-
+    // time complexity=O(n), space complexity=O(1)
     public static void main(String[] args) {
         FindNthNodePointers list = new FindNthNodePointers();
         int n = 2;
@@ -12,9 +12,7 @@ public class FindNthNodePointers {
         list.insert(30);
         list.insert(40);
         list.findnthNodeData(n);
-
     }
-
     public void insert(int data) {
         Node newnode = new Node(data);
         if (headnode == null) {
@@ -36,10 +34,12 @@ public class FindNthNodePointers {
             System.out.println("invalid range");
             return;
         }
+        // ptemp reaches n moves
         while (i <n && ptemp != null) {
             ptemp = ptemp.getNext();
             i++;
         }
+        // both  pointer moves by 1
         while (ptemp.getNext() != null) {
             ptemp = ptemp.getNext();
             pnthnode = pnthnode.getNext();

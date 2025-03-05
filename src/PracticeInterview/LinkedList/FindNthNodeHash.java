@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class FindNthNodeHash {
     Node headNode;
-
+    // time complexity=O(n), space complexity=O(n)
     public static void main(String[] args) {
         int n = 4;
         FindNthNodeHash list = new FindNthNodeHash();
@@ -45,6 +45,7 @@ public class FindNthNodeHash {
             System.out.println("invalid range");
             return;
         }
+        // lookup in hashtable for length-n;
         Node nthNode = map.get(length - n);
         System.out.println(nthNode.getData());
 
