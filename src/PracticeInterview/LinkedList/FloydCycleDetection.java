@@ -1,16 +1,22 @@
-class Node {
-    int data;
-    Node next;
+package PracticeInterview.LinkedList;
 
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
+import PracticeInterview.LinkedList.Node;
 
 public class FloydCycleDetection {
-    Node head;
+   static Node head;
+    public static void main(String[] args) {
+        FloydCycleDetection list = new FloydCycleDetection();
+        head = new Node(1);
+        Node n1 = new Node(2);
+        head.setNext(n1);
+        Node n2 = new Node(3);
+        n1.setNext(n2);
+        Node n3 = new Node(4);
+        n2.setNext(n3);
+        n3.setNext(n2); // loop
 
+        list.detectLoop(); // Checking for a loop
+    }
     // Function to detect a loop using Floyd’s Cycle Detection Algorithm
     public boolean detectLoop() {
         Node slow = head; // Slow pointer (🐢)
@@ -30,33 +36,20 @@ public class FloydCycleDetection {
     }
 
     // Function to create a loop for testing
-    public void createLoop() {
-        Node temp = head;
-        Node loopNode = null;
-        int count = 1;
+//    public void createLoop() {
+//        Node temp = head;
+//        Node loopNode = null;
+//        int count = 1;
+//
+//        while (temp.next != null) {
+//            if (count == 3) {  // Create a loop at node 3
+//                loopNode = temp;
+//            }
+//            temp = temp.next;
+//            count++;
+//        }
+//        temp.next = loopNode; // Last node points to node 3 (loop)
+//    }
 
-        while (temp.next != null) {
-            if (count == 3) {  // Create a loop at node 3
-                loopNode = temp;
-            }
-            temp = temp.next;
-            count++;
-        }
-        temp.next = loopNode; // Last node points to node 3 (loop)
-    }
 
-    public static void main(String[] args) {
-        FloydCycleDetection list = new FloydCycleDetection();
-        list.head = new Node(1);
-        list.head.next = new Node(2);
-        list.head.next.next = new Node(3);
-        list.head.next.next.next = new Node(4);
-        list.head.next.next.next.next = new Node(5);
-        list.head.next.next.next.next.next = new Node(6);
-        list.head.next.next.next.next.next.next = new Node(7);
-        list.head.next.next.next.next.next.next.next = new Node(8);
-
-        list.createLoop(); // Creating a loop at node 3
-        list.detectLoop(); // Checking for a loop
-    }
 }
