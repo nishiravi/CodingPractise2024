@@ -42,12 +42,12 @@ public class InsertAndPrintList {
         headNode = newNode; // make new Node as HeadNode;
     }
 
-    public void insertAtEnd(int data) {
+    public Node insertAtEnd(int data) {
         Node newNode = new Node(data);
         //inserting at the beginning
         if (headNode == null) {
             headNode = newNode;
-            return;
+            return newNode;
         }
         //inserting at the end
         Node temp = headNode;
@@ -55,6 +55,7 @@ public class InsertAndPrintList {
             temp = temp.getNext();
         }
         temp.setNext(newNode);
+        return headNode;
     }
 
     public void insertAtPosition(int position, int data) {

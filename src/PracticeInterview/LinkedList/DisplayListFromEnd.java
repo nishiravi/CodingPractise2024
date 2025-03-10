@@ -1,11 +1,11 @@
 package PracticeInterview.LinkedList;
 
-public class FindMiddleElement {
+public class DisplayListFromEnd {
     // find middle element in the list
     static Node headNode;
 
     public static void main(String[] args) {
-        FindMiddleElement list = new FindMiddleElement();
+        DisplayListFromEnd list = new DisplayListFromEnd();
         list.insert(10);
         list.insert(20);
         list.insert(30);
@@ -13,7 +13,7 @@ public class FindMiddleElement {
         list.insert(50);
         list.insert(60);
         list.insert(70);
-        System.out.println(middleElement(headNode));
+        listOfElement(headNode);
     }
 
     public void insert(int data) {
@@ -30,20 +30,14 @@ public class FindMiddleElement {
 
     }
 
-    public static int middleElement(Node headNode) {
-        Node firstNode = headNode;
-        Node secondNode = headNode;
-        int i = 0;
-        while (firstNode.getNext() != null) {
-            if (i == 0) {
-                firstNode = firstNode.getNext();
-                i = 1;
-            } else if (i == 1) {
-                firstNode = firstNode.getNext();
-                secondNode = secondNode.getNext();
-                i = 0;
-            }
+    public static void listOfElement(Node headNode) {
+
+        if(headNode==null)
+        {
+            return;
         }
-        return secondNode.getData();
+        listOfElement(headNode.getNext());
+        System.out.println(headNode.getData());
+
     }
 }
