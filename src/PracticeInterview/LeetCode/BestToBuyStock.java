@@ -23,12 +23,12 @@ public class BestToBuyStock {
     int returnMaxProfit(int[] prices) {
         int maxProfit = 0;
         int minTillNow = Integer.MAX_VALUE;
-        for(int i=0; i<prices.length-1; i++) {
+        for(int i=0; i<=prices.length-1; i++) {
             if(prices[i] < minTillNow) {
                 minTillNow = prices[i];
             } else  {
                 int profit = prices[i]-minTillNow;
-                if(maxProfit < profit)
+                if(profit>maxProfit)
                         maxProfit = profit;
             }
         }

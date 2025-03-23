@@ -1,18 +1,18 @@
-package PracticeInterview.LeetCode;
+package PracticeInterview.LinkedList;
 
-import PracticeInterview.LinkedList.Node;
-
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.Map;
+import java.util.Set;
 
-public class LinkedListLoopHashTable {
+public class LinkedListLoopHashTable_BF {
     static Node headNode;
 
     //This approach takes O(N) time, where N is the number of nodes in the list.
     //It also requires O(N) extra space for storing nodes in the HashSet.
     public static void main(String[] args) {
 
-        LinkedListLoopHashTable list = new LinkedListLoopHashTable();
+        LinkedListLoopHashTable_BF list = new LinkedListLoopHashTable_BF();
         headNode = new Node(1);
         Node n1 = new Node(2);
         headNode.setNext(n1);
@@ -25,14 +25,15 @@ public class LinkedListLoopHashTable {
     }
     public void findLoop() {
         Node temp = headNode;
-        Map<Node, Boolean> map = new Hashtable<>();
+        Set<Node> set = new HashSet<>() {
+        };
         int index = 1;
         while (temp != null) {
-            if (map.containsKey(temp)) {
+            if (set.contains(temp)) {
                 System.out.println("loop exists");
                 return;
             } else {
-                map.put(temp, true);
+                set.add(temp);
                 temp = temp.getNext();
             }
 

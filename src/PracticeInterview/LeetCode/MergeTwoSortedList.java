@@ -14,12 +14,14 @@ public class MergeTwoSortedList {
 //        List<Integer> list= new ArrayList<>();
 //        while(temp1.getNext()!=null && temp2.getNext()!=null)
 //        {
-//            if(temp.getData()<=temp2.getData())
+//            if(temp1.getData()<=temp2.getData())
 //            {
 //                list.add(temp1.getData());
+           //      temp1=temp1.getNext();
 //            }
 //            else {
 //                list.add(temp2.getData());
+   // temp2=temp2.getNext();
 //            }
 //        }
 //        System.out.println(list);

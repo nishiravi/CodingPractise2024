@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class IntersectionofTwoArray {
+    //Given two integer arrays nums1 and nums2, return an array of their intersection.
+    // Each element in the result must be unique and you may return the result in any order.
     public static void main(String[] args) {
         Integer[] nums1 = {1, 2, 2, 1};
         Integer[] nums2 = {2, 2};

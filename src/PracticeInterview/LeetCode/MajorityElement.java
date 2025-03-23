@@ -3,8 +3,10 @@ package PracticeInterview.LeetCode;
 import java.util.HashMap;
 
 public class MajorityElement {
+    //The majority element is the element that appears more than ⌊n / 2⌋ times.
+    // You may assume that the majority element always exists in the array.
     public static void main(String[] args) {
-        int[] nums = {3,3,2};
+        int[] nums = {2,2,1,1,1,2,2};
         HashMap<Integer,Integer> map=new HashMap<>();
         for(int n: nums)
         {

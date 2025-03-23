@@ -1,18 +1,19 @@
-package PracticeInterview.LinkedList;
+package PracticeInterview.LeetCode;
 
-import java.util.HashSet;
+import PracticeInterview.LinkedList.Node;
+
 import java.util.Hashtable;
 import java.util.Map;
-import java.util.Set;
 
-public class LinkedListLoopHashTable {
+public class LinkedListLoopBF {
     static Node headNode;
 
     //This approach takes O(N) time, where N is the number of nodes in the list.
     //It also requires O(N) extra space for storing nodes in the HashSet.
+
     public static void main(String[] args) {
 
-        LinkedListLoopHashTable list = new LinkedListLoopHashTable();
+        LinkedListLoopBF list = new LinkedListLoopBF();
         headNode = new Node(1);
         Node n1 = new Node(2);
         headNode.setNext(n1);
