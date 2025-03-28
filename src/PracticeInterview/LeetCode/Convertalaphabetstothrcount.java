@@ -13,6 +13,7 @@ public class Convertalaphabetstothrcount {
                 i++;
             }
          sb.append(currentchar).append(count);
+
         }
         System.out.println(sb.toString());
     }

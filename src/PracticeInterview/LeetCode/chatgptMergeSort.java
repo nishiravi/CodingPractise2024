@@ -44,6 +44,6 @@ public class chatgptMergeSort {
         }
 
         // ✅ Fix: Copy sorted elements back to original array
-        System.arraycopy(temp, left, arr, left, right - left + 1);
+        System.arraycopy(temp, left, arr, left, right-left+1);
     }
 }

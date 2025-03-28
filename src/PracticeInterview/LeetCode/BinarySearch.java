@@ -4,7 +4,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int[] num = {1, 2, 3, 4, 5, 6};
         int n = num.length;
-        int data = 1;
+        int data = 4;
         System.out.println("found in index  " + findBinarySearch(num, n, data));
     }
 
@@ -12,7 +12,7 @@ public class BinarySearch {
         int low = 0;
         int high = n - 1;
         while (low <=high) {
-            int mid = low+(high - low) / 2;
+            int mid = (low+high)/ 2;
             if (num[mid] == data) {
                 return mid;
             } else if (num[mid] < data)

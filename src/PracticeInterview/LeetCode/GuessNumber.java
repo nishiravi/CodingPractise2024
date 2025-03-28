@@ -1,11 +1,12 @@
 package PracticeInterview.LeetCode;
 
 public class GuessNumber {
+    //https://leetcode.com/problems/guess-number-higher-or-lower/description/
     public static void main(String[] args) {
         int[] num = {1, 2, 3, 4, 5, 6};
         int n = num.length;
-        int data = 1;
-        // System.out.println("found in index  " + findBinarySearch(num, n, data));
+       // int data = 1;
+       // System.out.println("found in index  " + findBinarySearch(num, n, data));
 
     }
 }

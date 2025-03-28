@@ -3,8 +3,8 @@ package PracticeInterview.LeetCode;
 public class GretaeLetterthantarget {
 
     public static void main(String[] args) {
-        char[] letter = {'b', 'c', 'j', 'k', 'l'};
-        char target = 'i';
+        char[] letter = {'b', 'c', 'j', 'k', 'z'};
+        char target = 'a';
         System.out.println(findGreater(letter, target));
     }
 
@@ -21,7 +21,7 @@ public class GretaeLetterthantarget {
 //    }
     public static char findGreater(char[] letter, char target) {
         int low = 0, high = letter.length - 1;
-        int pos = -1;
+        int pos = 0;
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
@@ -32,7 +32,7 @@ public class GretaeLetterthantarget {
                 low = mid + 1;   // Move right if letter[mid] <= target
             }
         }
-        return pos == -1 ? letter[0] : letter[pos]; // Handle circular behavior
+        return pos == 0 ? letter[0] : letter[pos]; // Handle circular behavior
     }
 
 }

@@ -6,7 +6,7 @@ import java.util.Map;
 public class FirstUniqueCharacter {
     public static void main(String[] args) {
 
-        String s="leetcodel";
+        String s="laeetcodel";
         Map<Character,Integer> map=new HashMap<>();
         for(char c:s.toCharArray())
         {
