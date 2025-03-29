@@ -1,8 +1,9 @@
 package PracticeInterview.LeetCode;
 
 public class Validmountionarray {
+    //https://leetcode.com/problems/valid-mountain-array/description/
     public static void main(String[] args) {
-        int[]  arr = {0,3,2,1};
+        int[]  arr = {1,2,3,2,1};
         System.out.println(mountainornot(arr));
     }
     public static boolean mountainornot(int[] arr)

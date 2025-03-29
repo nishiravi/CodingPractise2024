@@ -4,10 +4,10 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 public class TwoSum {
-
+//https://leetcode.com/problems/two-sum/description/
     public static void main(String[] args) {
 
-        int[] num = {2, 3, 4, 5};
+        int[] num = {2, 3, 3, 5};
         int target = 5;
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < num.length - 1; i++) {

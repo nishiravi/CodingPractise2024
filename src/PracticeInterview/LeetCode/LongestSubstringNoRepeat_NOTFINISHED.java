@@ -1,6 +1,6 @@
 package PracticeInterview.LeetCode;
 
-public class LongestSubstringNoRepeat {
+public class LongestSubstringNoRepeat_NOTFINISHED {
     //https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
     public static void main(String[] args) {
 
