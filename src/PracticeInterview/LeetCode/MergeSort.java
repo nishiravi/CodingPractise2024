@@ -52,12 +52,14 @@ public class MergeSort {
             temp_pos=temp_pos+1;
             right_start=right_start+1;
         }
-        for (int i = start; i <= end; i++) {
-            arr[i] = temp[i];
+        for(int i=start;i<=end;i++)
+        {
+            arr[i]=temp[i];
+        }
         }
 
     }
 
 
-}
+
 

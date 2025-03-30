@@ -3,7 +3,7 @@ package PracticeInterview.LeetCode;
 import java.util.Stack;
 
 public class QueueusingStacks {
-
+//https://leetcode.com/problems/implement-queue-using-stacks/description/
 
         Stack<Integer> pushstack=new Stack<>();
         Stack<Integer> popstack=new Stack<>();

@@ -40,6 +40,7 @@ public class MinStack {
 
     int pop()
     {
+
         minstack.pop();
         return stack.pop();
     }
