@@ -3,8 +3,8 @@ package PracticeInterview.LeetCode;
 public class GretaeLetterthantarget {
 
     public static void main(String[] args) {
-        char[] letter = {'b', 'c', 'j', 'k', 'z'};
-        char target = 'a';
+        char[] letter = {'d', 'c', 'j', 'k', 'z'};
+        char target = 'c';
         System.out.println(findGreater(letter, target));
     }
 

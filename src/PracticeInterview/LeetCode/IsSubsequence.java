@@ -22,7 +22,7 @@ public class IsSubsequence {
                 j++;
             }
         }
-        if(j==s.length())
+        if(j==s.length()) // remember this
         {
             System.out.println(true);
         }

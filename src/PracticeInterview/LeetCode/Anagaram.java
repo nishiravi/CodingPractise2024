@@ -5,7 +5,7 @@ public class Anagaram {
     public static void main(String[] args) {
 
         String s = "Anaram";
-        String t = "naagam";
+        String t = "naaoam";
         System.out.println(checkAnagram(s, t));
     }
     public static boolean checkAnagram(String s, String t)
@@ -13,15 +13,15 @@ public class Anagaram {
         if(s.length()!=t.length()){
             return false;
         } else{
-            int[] countofS=new int[256];
+            int[] countofS=new int[256];// // Frequency array for all ASCII characters
             for(char c:s.toLowerCase().toCharArray())
             {
-                countofS[c-'0']++;
+                countofS[c]++; /// Increment count at ASCII index of character
             }
             int[] countofT=new int[256];
             for(char a:t.toLowerCase().toCharArray())
             {
-                countofT[a-'0']++;
+                countofT[a]++;
             }
             for(int i=0;i<countofT.length-1;i++)
             {

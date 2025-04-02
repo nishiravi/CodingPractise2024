@@ -8,7 +8,7 @@ public class ReverseSubsetArray {
         int n=4;
         for (int i = 0; i < arr.length; i += n) {
             int left = i;
-            int right = Math.min(i + n - 1, arr.length - 1); // Ensure we don't go out of bound
+            int right = Math.min(i+n-1,arr.length);// Ensure we don't go out of bound
             while (left < right) {
                 int temp = arr[left];
                 arr[left] = arr[right];

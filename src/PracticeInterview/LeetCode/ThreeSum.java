@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ThreeSum {
     public static void main(String[] args) {
         int[] nums = {-1,0,1,2,-1,-4};
-        Arrays.sort(nums);
+        Arrays.sort(nums); ///////////////////// need to sort if u r using binary search
         int target = 0;
         for (int i = 0; i < nums.length-3; i++) {
             int temp = nums[i] - target;

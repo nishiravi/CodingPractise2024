@@ -12,7 +12,7 @@ public class FirstOccurrenceiaString {
                 }
                 if (j == needle.length() - 1) {
                     System.out.println(i);
-                    return;
+                    return ;
                 }
             }
         }

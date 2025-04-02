@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class FirstNonrepeatCharacter {
     public static void main(String[] args) {
-        String s="Is it your first company";
+        String s="Is it your firt company";
         Map<Character,Integer> map=new HashMap<>();
         for(char c:s.toLowerCase().toCharArray())
         {

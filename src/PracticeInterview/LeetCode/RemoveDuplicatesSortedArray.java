@@ -15,7 +15,6 @@ public class RemoveDuplicatesSortedArray {
     public static void main(String[] args) {
 
         int[] num={0,1,1,2,2};
-
        int i=0,j=1;
        while(j<=num.length-1)
        {
@@ -25,7 +24,7 @@ public class RemoveDuplicatesSortedArray {
            }
            j++;
        }
-       System.out.println("unique chaacters stops at index= " +i);
-           System.out.println(Arrays.toString(num));
+       System.out.println("unique character stops at index= " +i);
+       System.out.println(Arrays.toString(num));
     }
 }

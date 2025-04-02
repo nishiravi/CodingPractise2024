@@ -5,7 +5,7 @@ public class removeDuplicateprint {
         String s="aabbcdddcaa";
         for(int i=0;i<s.length();i++)
         {
-            if( i==0 || s.charAt(i)!=s.charAt(i-1) )
+            if( i==s.length()-1 || s.charAt(i)!=s.charAt(i+1) )
             {
                 System.out.print(s.charAt(i));
             }
