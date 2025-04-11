@@ -4,8 +4,8 @@ public class Anagaram {
 
     public static void main(String[] args) {
 
-        String s = "Anaram";
-        String t = "naaoam";
+        String s = "listen";
+        String t = "silent";
         System.out.println(checkAnagram(s, t));
     }
     public static boolean checkAnagram(String s, String t)

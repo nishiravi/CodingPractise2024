@@ -14,17 +14,19 @@ public class RemoveDuplicatesSortedArray {
     //Return k.
     public static void main(String[] args) {
 
-        int[] num={0,1,1,2,2};
-       int i=0,j=1;
+        int[] num={0,0,1,1,2,3};
+       int k=0,j=1;
        while(j<=num.length-1)
        {
-           if(num[i]!=num[j]){
-               i++;
-               num[i]=num[j];
+           if(num[k]!=num[j]){
+               k++;
+               num[k]=num[j];
            }
            j++;
        }
-       System.out.println("unique character stops at index= " +i);
+        System.out.println("the number of unique elements in nums is= " +(k+1));// K+1 , because array index is starting from 0
+
        System.out.println(Arrays.toString(num));
+
     }
 }

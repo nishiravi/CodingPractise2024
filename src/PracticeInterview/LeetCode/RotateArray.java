@@ -5,10 +5,11 @@ import java.util.Arrays;
 public class RotateArray {
     public static void main(String[] args) {
 
-        int[] num = {1, 2, 3, 4, 5, 6,7};
-        int k = 3;
-        reverseArray(0, k - 1, num);
-        reverseArray(k+1, num.length - 1, num);
+        int[] num = {-1,-100,3,99};
+        int n=num.length-1;
+        int k = 2;
+        reverseArray(0, n-k, num);
+        reverseArray(k, num.length -1, num);
         reverseArray(0, num.length - 1, num);
         System.out.println(Arrays.toString(num));
 //        while(n<k)

@@ -13,7 +13,7 @@ public class BinaryTreePreOrder {
         }
     }
      public  static class BinaryTree{
-        static int idx=-1;
+         int idx=-1;
         public  Node buildtree(int[] nodes)
         {
             idx++;
@@ -39,7 +39,7 @@ public class BinaryTreePreOrder {
     }
     public static void main(String[] args) {
         int[] nodes={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
-        BinaryTree tree = null;
+        BinaryTree tree = new BinaryTree();
         Node rootNode=tree.buildtree(nodes);
         preOrder(rootNode);
     }
