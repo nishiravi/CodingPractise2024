@@ -14,17 +14,16 @@ public class BinaryTreeInOrder {
     }
     static class BinaryTree{
         static int idx=-1;
-        public  Node buildtree(int[] nodes)
-        {
+        public  Node buildtree(int[] nodes) {
             idx++;
-            if(nodes[idx]==-1)
-            {
+            if (nodes[idx] == -1) {
                 return null;
+            } else {
+                Node newNode = new Node(nodes[idx]);
+                newNode.left = buildtree(nodes);
+                newNode.right = buildtree(nodes);
+                return newNode;
             }
-            Node newNode=new Node(nodes[idx]);
-            newNode.left=buildtree(nodes);
-            newNode.right=buildtree(nodes);
-            return newNode;
         }
     }
     private static void inOrder(Node rootNode) {

@@ -30,7 +30,7 @@ public class BinaryTreePreOrder {
     private static void preOrder(Node rootNode) {
         if(rootNode==null)
         {
-            System.out.print("-1 ,");
+            //System.out.print("-1 ,");
             return;
         }
         System.out.print(rootNode.data+" ,");

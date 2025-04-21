@@ -3,7 +3,7 @@ package PracticeInterview.LeetCode;
 public class PrintfirstandLastOccuranse_Linear {
     public static void main(String[] args) {
         int arr[] = {1, 1, 3, 4, 5, 5, 8};
-        int target = 1;
+        int target = 5;
         System.out.println("first occurance " + linerSearchFirstOccurance(arr, target));
         System.out.println("last occurance " + linerSearchLastOccurance(arr, target));
 

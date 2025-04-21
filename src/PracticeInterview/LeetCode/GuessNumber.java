@@ -7,7 +7,6 @@ public class GuessNumber {
         int n = num.length;
        // int data = 1;
        // System.out.println("found in index  " + findBinarySearch(num, n, data));
-
     }
 }
 //    public static int findBinarySearch(int[] num, int n, int data) {

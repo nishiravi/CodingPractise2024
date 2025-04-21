@@ -3,7 +3,7 @@ package PracticeInterview.LeetCode;
 public class Convertalaphabetstothrcount {
     public static void main(String[] args) {
 
-        String s = "aaabbcc";
+        String s = "aaabbc";
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i <=s.length()-1; i++) {
             char currentchar=s.charAt(i);
