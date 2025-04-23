@@ -1,6 +1,6 @@
 package PracticeInterview.LeetCode;
 
-public class NumberPalindrome {
+public class MaxMinNumberPalindrome {
     public static void main(String[] args) {
         int n = 100;
         checkNumberPalindrome(n);
