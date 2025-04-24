@@ -49,7 +49,7 @@ public class IsomorphicStrings_Leetcode {
                 }
             }
             else {
-                tTOs.put(charT,charS); // map character  s->t
+                tTOs.put(charT,charS); // map character  t->s
             }
 
         }

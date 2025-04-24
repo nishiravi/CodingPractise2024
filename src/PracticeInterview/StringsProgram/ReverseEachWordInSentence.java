@@ -1,7 +1,4 @@
-package PracticeInterview.PracticeString;
-
-import java.util.Arrays;
-import java.util.List;
+package PracticeInterview.StringsProgram;
 
 public class ReverseEachWordInSentence {
     public static void main(String[] args) {
