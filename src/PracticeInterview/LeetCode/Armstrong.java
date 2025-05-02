@@ -13,12 +13,12 @@ public class Armstrong {
         while(data>0)
         {
           int temp=data%10;
-          data=data/10;
           sum+=temp*temp*temp;
           if(sum==n)
           {
               return true;
           }
+            data=data/10;
         }
            return false;
 
