@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SortArray {
     public static void main(String[] args) {
-        int[] arr={5,2,6,9,1};
+        int[] arr={5,0,6,9,10};
         for(int i=0;i<=arr.length-1;i++)
         {
             for(int j=0;j<arr.length-1-i;j++)
@@ -17,6 +17,7 @@ public class SortArray {
                 }
             }
         }
-        System.out.print(Arrays.toString(arr));
+        System.out.println("smallestElementis "+arr[0]);
+        System.out.println("largetsElement "+arr[arr.length-1]);
     }
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class FindingOfSpans {
     public static void main(String[] args) {
         // refer karumanchi page no:24 problem 22
-        int[] input={6,4,3,5,2};
+        int[] input={6,8,3,7,2};
         System.out.print(Arrays.toString(findSpan(input)));
     }
 
