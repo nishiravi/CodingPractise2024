@@ -3,7 +3,7 @@ package PracticeInterview.LeetCode;
 public class StringCheckPalindrome {
     public static void main(String[] args) {
 
-       String s = "ababXbaba";
+       String s = "ababXaba";
         int left = 0;
         int right = s.length() - 1;
         System.out.print(ispalindrome(s, left, right));

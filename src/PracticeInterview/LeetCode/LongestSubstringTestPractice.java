@@ -11,7 +11,7 @@ public class LongestSubstringTestPractice {
         int i=0,j=0;
         while(j<=s.length()-1)
         {
-          if(!(set.contains(s.charAt(j))))
+          if(!(set.contains(s.charAt(j)))) // when character not present add to the set
           {
               set.add(s.charAt(j));
               if(maxLength<=set.size())
@@ -20,12 +20,15 @@ public class LongestSubstringTestPractice {
               }
           }
           else {
+              //when character is already present
               while(s.charAt(i)!=s.charAt(j))
               {
+                  // when the character at i and character at j
+                  // is different remove the i character
                   set.remove(s.charAt(i));
                   i++;
               }
-             i++;
+             i++; //when the character at i and character at j is same.
           }
             j++;
         }

@@ -7,11 +7,11 @@ public class IsSubsequence {
     // (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
     public static void main(String[] args) {
 
-        String s = "hg", t = "ahbgdc";
-        issubsequense(s, t);
+        String s = "ha", t = "ahbgdc";
+        System.out.print(issubsequense(s, t));
     }
 
-    public static void issubsequense(String s, String t) {
+    public static boolean issubsequense(String s, String t) {
         int i = 0;
         int j = 0;
         while (i < t.length() && j < s.length()) {
@@ -24,8 +24,8 @@ public class IsSubsequence {
         }
         if(j==s.length()) // remember this
         {
-            System.out.println(true);
+            return true;
         }
-
+return false;
     }
 }

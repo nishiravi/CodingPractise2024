@@ -13,7 +13,7 @@ public class ValidParentheses {
     //Every close bracket has a corresponding open bracket of the same type.
     public static void main(String[] args) {
 
-        String s = "([])()";
+        String s = "]";
         System.out.println(checkvalidparenthesis(s));
     }
 
@@ -23,6 +23,10 @@ public class ValidParentheses {
             if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
                 stack.push(s.charAt(i));
             } else {
+                if(stack.empty())
+                {
+                    return false;
+                }
                 switch (s.charAt(i)) {
                     case ')':
                         if (stack.pop() != '(') {

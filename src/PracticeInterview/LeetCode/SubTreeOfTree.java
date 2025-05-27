@@ -1,29 +1,21 @@
 package PracticeInterview.LeetCode;
 
 //public class SubTreeOfTree {
-//    public static boolean isSubTree(TreeNode treeRoot, SubTree subRoot) {
-//        if (subRoot == null) {
-//            return true;
+//    class Solution {
+//        public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+//            if (root == null) {
+//                return subRoot == null;
+//            }
+//            if (isSameTree(root, subRoot)) {
+//                return true;
+//            }
+//            return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
 //        }
-//        if (treeRoot == null) {
-//            return false;
-//        }
-//        if (isidentical(treeRoot, subRoot)) {
-//            return true;
-//        }
-//        return isSubTree(treeRoot.left, subRoot.left) || isSubTree(treeRoot.right, subRoot.right)
-//    }
 //
-//    public static boolean isidentical(TreeNode treeRoot, SubTree subRoot) {
-//        if (subRoot == null && treeRoot == null) {
-//            return true;
+//        private boolean isSameTree(TreeNode p, TreeNode q) {
+//            if (p == null && q == null) return true;
+//            if (p == null || q == null) return false;
+//            return p.val == q.val && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 //        }
-//        if (subRoot == null || treeRoot == null) {
-//            return false;
-//        }
-//        if (treeRoot.data != subRoot.data) {
-//            return isidentical(treeRoot.left, subRoot.left) && isidentical(treeRoot.right, subRoot.right)
-//        }
-//return false;
 //    }
-//}
+//    }

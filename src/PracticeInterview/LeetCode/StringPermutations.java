@@ -2,14 +2,14 @@ package PracticeInterview.LeetCode;
 
 public class StringPermutations {
     public static void main(String[] args) {
-
+      //if a string length is n then num of permutation is n!, bellow example n=3, n!=6
         String s="abc";
         String prefix="";
         findPermutations(s,prefix);
     }
     public static void findPermutations(String str,String prefix)
     {
-       if(str.length()==0)
+       if(str.isEmpty())
        {
            System.out.println(prefix);
        }

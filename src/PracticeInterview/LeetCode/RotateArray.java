@@ -5,12 +5,22 @@ import java.util.Arrays;
 public class RotateArray {
     public static void main(String[] args) {
 
-        int[] num = {-1,-100,3,99};
+        int[] num = {2,5,6,8,9,10};
         int n=num.length-1;
-        int k = 2;
-        reverseArray(0, n-k, num);
-        reverseArray(k, num.length -1, num);
-        reverseArray(0, num.length - 1, num);
+        int k = 4;
+        if(num.length==0)
+        {
+            return;
+        }
+        // when k is more than array length
+        k=k%num.length;
+        if(k==0)
+        {
+            return ; // even if u return it will be back to same input array
+        }
+        reverseArray(0, n-k,num);
+        reverseArray(n-k+1, n, num);
+        reverseArray(0, n, num);
         System.out.println(Arrays.toString(num));
 //        while(n<k)
 //        {
@@ -26,7 +36,7 @@ public class RotateArray {
     }
 
     public static void reverseArray(int n, int k, int[] num) {
-        while (n < k) {
+        while (n <=k ) {
             int temp = num[n];
             num[n] = num[k];
             num[k] = temp;

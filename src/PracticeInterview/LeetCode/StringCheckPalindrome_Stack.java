@@ -5,7 +5,7 @@ import java.util.Stack;
 public class StringCheckPalindrome_Stack {
     public static void main(String[] args) {
 
-        String s = "ababXbaba";
+        String s = "1ababXbaba2";
         System.out.print(ispalindrome(s));
     }
 
@@ -26,10 +26,10 @@ public class StringCheckPalindrome_Stack {
             }
             i++;
         }
-        if(!stack.empty())
+        if(stack.empty())
         {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 }

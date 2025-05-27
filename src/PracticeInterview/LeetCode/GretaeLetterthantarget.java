@@ -3,8 +3,8 @@ package PracticeInterview.LeetCode;
 public class GretaeLetterthantarget {
 //https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/?utm_source=chatgpt.com
     public static void main(String[] args) {
-        char[] letter = {'a', 'x', 'x', 'y'};
-        char target = 'c';
+        char[] letter = {'c', 'j', 'k', 'n','o'};
+        char target = 'm';
         System.out.println(findGreater(letter, target));
     }
 

@@ -2,24 +2,24 @@ package PracticeInterview.LeetCode;
 
 public class TowerOfHanoi {
     public static void main(String[] args) {
-        char source='A';
-        char aux='B';
-        char dest='C';
+        char source='S';
+        char aux='H';
+        char dest='D';
         int n=3;
-        towerOfHani(n,source,dest,aux);
+        towerOfHani(n,source,aux,dest);
     }
 
-    private static void towerOfHani(int n, char source, char dest, char aux) {
+    private static void towerOfHani(int n, char source, char aux,char dest ) {
         if(n==1)
         {
-            System.out.println("move disk "+n+" from source  "+source+" to destination "+dest);
+            System.out.println(source+" ---> "+dest);
             return;
         }
-        // move n-1  from source to auxillay
-        towerOfHani(n-1,source,aux,dest);
+        // move n-1  from source to auxiliary
+        towerOfHani(n-1,source,dest,aux);
         //move n disk to destination
-        System.out.println("move disk "+n+" from source  "+source+" to destination "+dest);
-        towerOfHani(n-1,aux,dest,source);
+        System.out.println(source+" ---> "+dest);
+        towerOfHani(n-1,aux,source,dest);
     }
 }
 

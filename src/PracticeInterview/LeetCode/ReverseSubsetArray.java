@@ -1,22 +1,32 @@
 package PracticeInterview.LeetCode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ReverseSubsetArray {
     public static void main(String[] args) {
-        int[] arr={1,3,5,7,9,11,15,17,19};
-        int n=4;
-        for (int i = 0; i < arr.length; i += n) {
-            int left = i;
-            int right = Math.min(i+n-1,arr.length);// Ensure we don't go out of bound
-            while (left < right) {
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-                left++;
-                right--;
+        //https://www.geeksforgeeks.org/reverse-an-array-in-groups-of-given-size/
+        int[] arr = {1, 2, 3, 4, 5};
+        int k = 2;
+        if (k > arr.length) {  // reverse
+            reverseArray(arr, 0, arr.length - 1);
+        } else {
+            for (int i = 0; i <= arr.length; i += k) {
+                int left = i;
+                int right = Math.min(i + k - 1, arr.length - 1);// Ensure we don't go out of bound
+                reverseArray(arr, left, right);
             }
         }
-        System.out.println("Reversed array in subsets of " + n + ": " + Arrays.toString(arr));
+        System.out.print(Arrays.toString(arr));
+    }
+
+    public static void reverseArray(int[] arr, int left, int right) {
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--;
+        }
     }
 }
