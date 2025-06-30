@@ -3,7 +3,7 @@ package PracticeInterview.LeetCode;
 public class LongestCommonPrefix {
     //https://leetcode.com/problems/longest-common-prefix/description/
     public static void main(String[] args) {
-        String[] strs = {"ower", "flow", "flight"};
+        String[] strs = {"flower", "flow", "flight"};
         System.out.print(findPrefix(strs));
     }
 

@@ -1,7 +1,33 @@
 package PracticeInterview.LeetCode;
 
+import PracticeInterview.LinkedList.Node;
+
 public class RemoveLinkedListElements {
+    //https://leetcode.com/problems/remove-linked-list-elements/
+    public Node removeElements(Node head, int val) {
+        while(head!=null && head.getData() ==val)
+        {
+            head= head.getNext();
+        }
+        Node current=head;
+        Node previous=null;
+        while(current!=null){
+            if(current.getData()==val)
+            {
+                previous.setNext(current.getNext());
+            } else
+            {
+                previous=current;
+            }
+            current= current.getNext();
+        }
+        return head;
+    }
 }
+
+
+
+
 
 
 //public static Node removeElements(Node head, int val) {

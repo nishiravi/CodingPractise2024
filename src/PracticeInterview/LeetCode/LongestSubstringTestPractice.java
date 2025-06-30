@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class LongestSubstringTestPractice {
     public static void main(String[] args) {
-        String s="aabaab!bb";
+        String s="pwwkew";
         Set<Character> set=new HashSet<>();
         int maxLength=0;
         int i=0,j=0;

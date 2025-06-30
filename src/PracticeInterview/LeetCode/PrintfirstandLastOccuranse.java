@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class PrintfirstandLastOccuranse {
+    //https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/submissions/1648215436/
     public static void main(String[] args) {
         int arr[] = {1, 1, 3, 4, 5, 5, 5, 8};
         int low = 0;

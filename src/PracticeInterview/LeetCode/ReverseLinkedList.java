@@ -3,6 +3,7 @@ package PracticeInterview.LeetCode;
 import PracticeInterview.LinkedList.Node;
 
 public class ReverseLinkedList {
+    //https://leetcode.com/problems/reverse-linked-list/description/
    static Node headnode;
     public static void main(String[] args) {
         int n = 3;
