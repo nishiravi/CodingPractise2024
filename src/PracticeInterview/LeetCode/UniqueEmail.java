@@ -16,7 +16,7 @@ public class UniqueEmail {
             String domainname=email[1];
             set.add(localname+"@"+domainname);
         }
-        System.out.println(set);
+        //System.out.println(set);
         System.out.print(set.size());
     }
 }
