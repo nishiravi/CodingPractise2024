@@ -3,7 +3,7 @@ package PracticeInterview.LeetCode;
 public class UglyNumber {
     public static void main(String[] args) {
         //https://leetcode.com/problems/ugly-number/description/
-        int n = 0;
+        int n = 14;
         if(n==0)
         {
             System.out.print("false");
