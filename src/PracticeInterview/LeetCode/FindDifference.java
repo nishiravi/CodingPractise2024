@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class FindDifference {
     public static void main(String[] args) {
-        String s="";
-        String t="y";
+        String s="abcd";
+        String t="abcde";
         char result=findTheDifference(s,t);
         System.out.print(result);
     }
