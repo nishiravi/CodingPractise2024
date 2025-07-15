@@ -10,11 +10,12 @@ public class ArrangingCoins {
         System.out.print(result);
     }
     public static int arrangeCoins(int n) {
-       long low=1,high=n,result=0;
+       int low=1,high=n,result=0;
        while(low<=high)
        {
-           long mid=low+(high-low)/2;
-           long coins=mid*(mid+1)/2;
+           int mid=low+(high-low)/2;
+           //This formula calculates the total number of coins needed to make mid complete rows,sum of first k natural numbers:
+           int coins=mid*(mid+1)/2;
            if(coins==n)
            {
                return (int) mid;

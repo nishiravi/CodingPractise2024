@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class AssignCookies {
     //https://leetcode.com/problems/assign-cookies/description/
     public static void main(String[] args) {
-        int[] g = {1,2,3};
-        int[] s={5,6};
+        int[] g = {2,2,3};
+        int[] s={1,1};
         int result=findContentChildren(g,s);
         System.out.print(result);
     }
@@ -18,18 +18,19 @@ public class AssignCookies {
         int result=0;
         for(int n: g)
         {
+            // check if is the cookie size is more than children content value
             while(i<s.length && s[i]<n)
             {
-                i++; // when the children content value is more than the cookie size
-                // and we have next cookies to  assgin
+                i++; //check  next children content to  assgin
+
             }
             if(i==s.length)
             {
-                return result;
+                return result; // once all  the value of s array is done
 
             }else
             {
-                i++;
+                i++; // the value of content is less than or equal to assign cookies value
                 result++;
             }
 

@@ -13,7 +13,8 @@ public class Armstrong {
         while(data>0)
         {
           int temp=data%10;
-          sum+=temp*temp*temp;
+          //sum+=temp*temp*temp;
+            sum+=Math.pow(temp,3);
           if(sum==n)
           {
               return true;

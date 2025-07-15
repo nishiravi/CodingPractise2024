@@ -1,7 +1,6 @@
 package PracticeInterview.LeetCode;
 
 public class Anagaram {
-
     public static void main(String[] args) {
 
         String s = "listen";

@@ -4,7 +4,8 @@ public class AddDigits {
     //https://leetcode.com/problems/add-digits/description/
     public static void main(String[] args) {
         int num=38;
-        int result=addDigits( num);
+        int tempdata=num;
+        int result=addDigits( tempdata);
         System.out.print(result);
     }
     public static int addDigits(int num)
@@ -18,7 +19,7 @@ public class AddDigits {
        return num;
     }
 
-    private static int calaculateSum(int num) {
+    public static int calaculateSum(int num) {
         int temp=0;
         while(num!=0)
         {
