@@ -11,13 +11,12 @@ public class ExcelSheet {
 
     private static String convertToTitle(int columnNumber) {
         StringBuilder sb=new StringBuilder();
-        while(columnNumber!=0)
-        {
-            columnNumber--;
-            int temp=columnNumber%26;
-            columnNumber=columnNumber/26;
-            char alpha=(char) ('A' + temp);;
-            sb=sb.append(alpha);
+        while (columnNumber != 0) {
+            columnNumber--; // adjust to 0-based
+            int temp = columnNumber % 26;
+            char alpha = (char) ('A' + temp); // get corresponding char
+            sb.append(alpha); // build in reverse
+            columnNumber /= 26;// move to next digit
         }
          return sb.reverse().toString();
     }

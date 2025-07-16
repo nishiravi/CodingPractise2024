@@ -13,7 +13,7 @@ public class BinarySearch {
         int low = 0;
         int high = n - 1;
         int mid=0;
-        while (low <=high) {
+        while (low <high) {
              mid = low +(high-low)/ 2;
             if (num[mid] == target) {
                 return mid;

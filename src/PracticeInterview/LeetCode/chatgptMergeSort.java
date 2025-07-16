@@ -11,7 +11,7 @@ public class chatgptMergeSort {
     }
 
     private static void sortingusingMergeSort(int[] arr, int[] temp, int left, int right) {
-        if (left < right) {
+        if (left <right) {
             int mid = (left + right) / 2;
             sortingusingMergeSort(arr, temp, left, mid);  // ✅ Fix: Mid should be included
             sortingusingMergeSort(arr, temp, mid + 1, right);  // ✅ Fix: Mid+1 for right half
